@@ -11,7 +11,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * @desc AOP的单元测试类
  * @time 2019-12-30 23:26
  */
-@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy(proxyTargetClass = true)
 @ComponentScan("com.aop.spring.sample.*")
 public class AppAopTestUnit {
     public static void main(String[] args) {
